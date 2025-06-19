@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Eco Alerta</title>
+
+    <!-- Íconos Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="hoja_de_estilo.css" />
+    <style>
+        /* FORMULARIO DE REGISTRO */
+        .form-registro {
+          max-width: 400px;
+          margin: 6rem auto 2rem auto;
+          background-color: #f4f4f4;
+          padding: 2rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-registro h2 {
+          margin-bottom: 1.5rem;
+          color: #175f01;
+          text-align: center;
+        }
+
+        .form-registro input[type="text"],
+        .form-registro input[type="email"],
+        .form-registro input[type="password"] {
+          width: 100%;
+          padding: 0.75rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 0.25rem;
+        }
+
+        .form-registro button {
+          width: 100%;
+          padding: 0.75rem;
+          background-color: #44a825;
+          color: white;
+          border: none;
+          border-radius: 0.25rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .form-registro button:hover {
+          background-color: #36891d;
+        }
+
+        .form-registro p {
+          font-size: 0.9rem;
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .form-registro a {
+          color: #175f01;
+          text-decoration: none;
+        }
+
+        .form-registro a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+<!-- BARRA SUPERIOR -->
+<nav class="topheader">
+    <a href="index.html" class="logo">
+        <img src="imagenes/logo_blanco.png" alt="Logo ECO" />
+    </a>
+
+    <ul class="Menu_horizontal">
+        <li>
+            <a href="#">Quienes somos</a>
+            <ul class="Menu_Vertical">
+                <li><a href="#">HISTORIA</a></li>
+                <li><a href="#">TRAYECTORIA</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nuestra Misión</a></li>
+        <li><a href="#">Contáctenos</a></li>
+    </ul>
+
+    <a href="login.html" class="icono-login" title="Iniciar sesión">
+        <i class="fas fa-user"></i>
+    </a>
+</nav>
+
+<!-- FORMULARIO DE REGISTRO -->
+<section class="form-registro">
+    <h2>Crear Cuenta</h2>
+    <form action="#" method="post">
+        <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre completo"
+                required
+        />
+        <input
+                type="email"
+                name="correo"
+                placeholder="Correo electrónico"
+                required
+        />
+        <input
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+        />
+        <input
+                type="password"
+                name="confirmar"
+                placeholder="Confirmar contraseña"
+                required
+        />
+        <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+</section>
+</body>
+</html>

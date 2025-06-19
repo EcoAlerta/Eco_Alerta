@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 0 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
 .logo {
@@ -163,10 +164,13 @@
 
 .icono-login {
   color: white;
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 1.6rem;
+  margin-left: -20px;
+  margin-right: 10px;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .icono-login:hover {
