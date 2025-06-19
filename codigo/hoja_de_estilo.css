@@ -1,0 +1,174 @@
+/* MENÚ SUPERIOR */
+.topheader {
+  position: relative;
+  background-color: #44a825fe;
+  width: 100%;
+  z-index: 100;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 4.5rem;
+  width: auto;
+  display: block;
+}
+
+.Menu_horizontal {
+  list-style: none;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+.Menu_horizontal li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.Menu_horizontal li a:hover {
+  color: white;
+}
+
+.Menu_Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgb(1, 78, 13);
+}
+
+.Menu_horizontal li:hover .Menu_Vertical {
+  display: block;
+}
+
+.Menu_Vertical li a:hover {
+  background-color: rgb(160, 0, 0);
+}
+
+.Menu_Vertical li a {
+  display: block;
+  color: black;
+  padding: 15px;
+}
+
+/* SECCIÓN BIENVENIDA */
+.Bienvenida {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: rgb(226, 226, 226);
+  border-radius: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
+
+.Bienvenida-contenido {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.Bienvenida-texto {
+  flex: 2;
+  text-align: left;
+  max-width: 500px;
+  font-size: 1.5rem;
+}
+
+.Bienvenida-imagen {
+  flex: 1;
+}
+
+.Bienvenida-imagen img {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0rem;
+  margin-left: 500px;
+}
+
+.Bienvenida {
+  margin-bottom: 1rem; /* Espacio hacia abajo */
+}
+
+/** SECCION REPORTES **/
+
+.Reportes {
+  padding: 3rem 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.Reportes h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contenedor-reportes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-reporte {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-reporte:hover {
+  transform: translateY(-5px);
+}
+
+.card-reporte img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-reporte p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.icono-login {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icono-login:hover {
+  color: #e0e0e0;
+}
